@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vali Spaidăr, the first interlop bot in Romania, brings humor and power to your server. Add him to your Discord now!">
     <title>Vali Spaidăr</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <style>
@@ -32,7 +33,7 @@
         header img {
             width: 500px;
             height: auto;
-            margin-bottom: 1rem; /* Adaugă un spațiu între logo și titlu */
+            margin-bottom: 1rem;
         }
 
         header h1 {
@@ -90,6 +91,15 @@
             transition: background-color 0.3s, transform 0.3s;
             margin-top: 1rem;
             margin-right: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
         }
 
         .btn:hover {
@@ -147,11 +157,54 @@
             margin-bottom: 1rem;
         }
 
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            header img {
+                width: 80%;
+            }
+
+            .main {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            .image-column img {
+                width: 100%;
+                height: auto;
+            }
+
+            .container, .support-container {
+                max-width: 100%;
+            }
+
+            .btn {
+                width: 100%;
+                margin-top: 0.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .container h2 {
+                font-size: 1.2rem;
+            }
+
+            .container p {
+                font-size: 0.9rem;
+            }
+
+            .support-container h2 {
+                font-size: 1.3rem;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <img src="https://i.imgur.com/Sr6X4Pk.png" alt="Logo"> <!-- Adaugă link-ul către logo aici -->
+        <img src="https://i.imgur.com/Sr6X4Pk.png" alt="Logo">
         <h1>botu cu cea mai lungă fază</h1>
     </header>
     <div class="main">
@@ -171,8 +224,12 @@
             <p>Cu !help, ai acolo toate calitățile și talentele mele, totul pt suma modică bineînțeles (nu se include tva și camătă în preț)</p>
             <p>cum cu mine în viața ta morții tăi nu o să mai doarmă liniștiți, o să primești cele mai dulci mesaje dimineața, iar nevasta ta o să fie mai în siguranță ca niciodată, temerer moro chavel.</p>
             <div style="display: flex; justify-content: center;">
-                <a href="https://discord.com/oauth2/authorize?client_id=1315531249019781260" class="btn">Add to Discord</a>
-                <a href="https://discord.gg/d7yTmARHcc" class="btn">Join our Discord Server</a>
+                <a href="https://discord.com/oauth2/authorize?client_id=1315531249019781260" class="btn">
+                    <img src="https://i.imgur.com/3U5HEii.png" alt="Discord Icon"> Add to Discord
+                </a>
+                <a href="https://discord.gg/d7yTmARHcc" class="btn">
+                    <img src="https://i.imgur.com/3U5HEii.png" alt="Discord Icon"> Join our Discord Server
+                </a>
             </div>
         </div>
         <div class="support-container">
@@ -182,7 +239,6 @@
                 <img src="https://i.imgur.com/Sw5sTFv.png" alt="Ko-Fi Icon" style="width: 25px; height: 15px;">
                 Support the Project
             </a>
-            
         </div>
     </div>
     <footer>
